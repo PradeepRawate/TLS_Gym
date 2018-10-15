@@ -17,6 +17,10 @@ public class FakeRand {
 	
 	public FakeRand() {
 	}
+	
+	public FakeRand(byte[] data) {
+		this.data = data;
+	}
 
 	public FakeRand(byte[] data, int index, int numRead) {
 		super();
@@ -49,6 +53,10 @@ public class FakeRand {
 		this.numRead = numRead;
 	}
 
+	
+	public int getMin(int a, int b) {
+		return (a < b) ? a : b;
+	}
 	
 	@Override
 	public String toString() {
